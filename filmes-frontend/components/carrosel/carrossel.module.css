@@ -1,0 +1,21 @@
+.container {
+  padding: 30px;
+  background-color: #444140;
+}
+
+.card {
+  padding: 10px 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.poster {
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+

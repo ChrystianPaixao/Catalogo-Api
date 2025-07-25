@@ -1,0 +1,88 @@
+.header {
+  padding: 0px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F0EFF4;
+  background-color: #1E1E24;
+}
+
+.seila {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seila nav {
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+.nav a {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #F0EFF4;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nav a:hover {
+  transform: scale(1.10);
+}
+
+.text {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background-color: #333;
+  color: #F0EFF4;
+  border: 1px solid #555;
+  transition: all 0.2s ease;
+  width: 180px;
+}
+.text:focus{
+  border-color: #EA2B1F;
+  box-shadow: 0 0 5px #EA2B1F;
+}
+
+.img {
+  max-width: 80px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .seila {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seila nav {
+    font-size: 14px;
+  }
+
+  .nav a {
+    margin: 0px 20px 30px 20px;
+    font-size: 1.1em;
+  }
+
+  .text {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .img {
+    max-width: 70px;
+  }
+}
