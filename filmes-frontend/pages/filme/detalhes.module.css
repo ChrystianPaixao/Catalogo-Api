@@ -65,3 +65,38 @@
   color: rgb(50, 168, 50);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .direita {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .imagem {
+    max-height: 150px;
+  }
+
+  .esquerda {
+    padding: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    gap: 16px;
+  }
+
+  .açao {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .delete,
+  .atualizar {
+    width: 100%;
+    padding: 12px;
+  }
+}
