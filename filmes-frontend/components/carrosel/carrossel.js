@@ -11,6 +11,10 @@ export default function ListarFilmes() {
     async function Lfilmes() {
       try {
         const response = await listarFilmes();
+<<<<<<< HEAD
+=======
+        console.log("Filmes recebidos:", response.data);
+>>>>>>> teste
         setFilmes(response.data);
       } catch (error) {
         console.log("Erro ao listar filmes:", error);
@@ -21,10 +25,17 @@ export default function ListarFilmes() {
 
   const settings = {
     dots: true,
+<<<<<<< HEAD
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+=======
+    infinite: filmes.length >= 3,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: filmes.length > 3,
+>>>>>>> teste
     speed: 5000,
     autoplaySpeed: 2000,
     cssEase: "linear"
